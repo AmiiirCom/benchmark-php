@@ -188,7 +188,7 @@ function grading_the_result($total){
 
     $number = $matches[0];
 
-    if ( $number <= 0.150 ){
+    if ( $number > 0 and $number <= 0.150 ){
         $grade = array(
             'color' => '#5ec52b',
             'rating' => 'Excellent'
